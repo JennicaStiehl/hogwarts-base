@@ -8,7 +8,9 @@ class SearchService
     id_hash = results.find do |house_data|
       house_data[:name] == @house
     end
-    id_hash[:id]
+    if id_hash
+      id_hash[:id]
+    end
   end
 
   def get_members
