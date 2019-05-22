@@ -1,0 +1,8 @@
+<h1>House Members</h1>
+<h3 class='results'> <%= facade.header %> </h3>
+  <div  class='members' >
+    <% facade.get_results.each do |member| %>
+      <li class="student-name"><%= member.name %></li>
+      <li class="student-id"><%= member.id %></li>
+    <% end %>
+  </div>
